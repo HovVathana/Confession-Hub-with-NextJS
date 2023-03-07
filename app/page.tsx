@@ -30,19 +30,18 @@ export default function Home() {
           <SkeletonLoaderPost />
         </div>
       ) : (
-        <>
+        <div>
           <CreatePost />
           {data?.map((post) => (
             <Post
-              Comment={post.Comment}
               key={post.id}
-              name={post?.username}
-              postTitle={post.title}
               id={post.id}
-              createdAt={post.createdAt}
+              name={post.username}
+              postTitle={post.title}
+              Comment={post?.Comment}
             />
           ))}
-        </>
+        </div>
       )}
     </main>
   );

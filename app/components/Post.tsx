@@ -8,7 +8,7 @@ type PostProps = {
   name: string;
   postTitle: string;
   id: string;
-  Comment: [];
+  Comment: [] | undefined;
   createdAt: string;
 };
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default async function Nav() {
+export default function Nav() {
   return (
     <nav className="flex flex-col py-8">
       <Link href={"/"}>
