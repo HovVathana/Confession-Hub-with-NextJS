@@ -39,6 +39,7 @@ export default function Home() {
               name={post.username}
               postTitle={post.title}
               Comment={post?.Comment}
+              createdAt={post.createdAt}
             />
           ))}
         </div>
