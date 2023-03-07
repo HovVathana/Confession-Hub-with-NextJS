@@ -36,7 +36,7 @@ export default function Home() {
             <Post
               Comment={post.Comment}
               key={post.id}
-              name={post.username}
+              name={post?.username}
               postTitle={post.title}
               id={post.id}
               createdAt={post.createdAt}
